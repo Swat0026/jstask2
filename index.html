@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <div class="main">
+        <form action="#" class="form1">
+    
+            <label>Age</label>
+            <input type="text" id="age">
+
+            <label>Weight in kg</label>
+            <input type="text" id="weight">
+
+            <button class="btn" id="btn2" type="submit" onclick="handleclick()">Submit</button>
+            <p id="output"></p>
+        </form>
+
+    </div>
+    <script >
+        var hi=document.getElementById('age').value;
+        function handleclick(){
+            var age1= parseInt( document.getElementById('age').value);
+            var weight1= parseInt (document.getElementById('weight').value);
+            // var result= document.getElementById('output').innerHTML
+
+            if (age1 >= 5 && age1 <= 7) {
+          console.log("y");
+          if (weight1 < 15) {
+            document.getElementById("output").innerHTML="Under Weight";
+          } else if (weight1 >= 15 && weight1 <= 20) {
+            document.getElementById("output").innerHTML="Perfect";
+          } else if (weight1 > 20) {
+            document.getElementById("output").innerHTML="Over Weight";
+          }
+        }
+        if (age1 >= 8 && age1 <= 10) {
+          console.log("y");
+          if (weight1 < 21) {
+            document.getElementById("output").innerHTML="Under Weight";
+          } else if (weight1 >= 21 && weight1 <= 25) {
+            console.log("Perfect");
+            document.getElementById("output").innerHTML="Perfect";
+          } else if (weight1 > 25) {
+            console.log("Over Weight");
+            document.getElementById("output").innerHTML="Over Weight";
+          }
+        }
+        if (age1 >= 11 && age1 <= 15) {
+          console.log("y");
+          if (weight1 < 26) {
+            document.getElementById("output").innerHTML="Under Weight";
+          } else if (weight1 >= 26 && weight1 <= 30) {
+            console.log("Perfect");
+            document.getElementById("output").innerHTML="Perfect";
+          } else if (weight1 > 30) {
+            console.log("Over Weight");
+            document.getElementById("output").innerHTML="Over Weight";
+          }
+        }
+        if (age1 >= 16 && age1 <= 20) {
+          console.log("y");
+          if (weight1 < 31) {
+            document.getElementById("output").innerHTML="Under Weight";
+          } else if (weight1 >= 31 && weight1 <= 40) {
+            console.log("Perfect");
+            document.getElementById("output").innerHTML="Perfect";
+          } else if (weight1 > 40) {
+            console.log("Over Weight");
+            document.getElementById("output").innerHTML="Over Weight";
+          }
+        }
+
+        
+
+        }
+
+    </script>
+    
+</body>
+</html>
